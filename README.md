@@ -101,7 +101,7 @@ Start the project with your favorite IDE with Docker running.
 * It also shows the Status History so 'Bonus' requirement is met.
 
 ```
-• Bir ilana ait zamanla oluşan tüm durum değişikliklerini listeleme (BONUS)
+Bir ilana ait zamanla oluşan tüm durum değişikliklerini listeleme (BONUS)
 ```
 
 <img class="img-responsive" src="imgs/Screenshot_2.png" align="">
@@ -133,13 +133,13 @@ Kampanya ilk verildiğinde TSS, ÖSS ve Diğer kategorisi için "Onay Bekliyor" 
 <img class="img-responsive" src="imgs/Screenshot_5.png" align="">
 
 ```
-* "Onay Bekliyor" durumundaki kampanya onaylandığında "Aktif" hale gelir. (İlanlar her daim onaylanacakmış ve reddedilmeyecekmiş gibi varsayılabilir)
-* Kullanıcı "Aktif" durumdaki veya "Onay Bekliyor" durumdaki ilanını "Deaktif" yapabilir.
+"Onay Bekliyor" durumundaki kampanya onaylandığında "Aktif" hale gelir. (İlanlar her daim onaylanacakmış ve reddedilmeyecekmiş gibi varsayılabilir)
+Kullanıcı "Aktif" durumdaki veya "Onay Bekliyor" durumdaki ilanını "Deaktif" yapabilir.
 ```
 
 ### Dashboard Controller
 
-<img class="img-responsive" src="githubimg/Screenshot_6.png" align="">
+<img class="img-responsive" src="imgs/Screenshot_6.png" align="">
 
 * In this section, this API call will show the "ACTIVE", "INACTIVE" and "WAITING_APPROVAL" counts in the database.
 
@@ -150,6 +150,16 @@ Kayıtlı tüm kampanyaların toplamda hangi durumlarda olduğunun istatistiksel
 ### Unit Tests
 
 * This project also provides unit tests for controllers and services for both Campaign and User entities.
+
+### Performance Logging 
+
+<img class="img-responsive" src="imgs/Screenshot_7.png" align="">
+
+* As seen above this code provides a calcutation for all the methods in the project and it logs every methods calls that extends the 5 ms time limit.
+
+```
+Çalışma süresi 5 milisaniyeden fazla süren isteklerin her defasında loglanması
+```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
