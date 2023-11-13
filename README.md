@@ -48,8 +48,8 @@ git clone https://github.com/Kinto2517/NeviTechInternshipCase.git
 
 #### Set Up Docker Compose File:
 
-```
-• Uygulamanın containerize edilmesi
+```diff
+@@ Uygulamanın containerize edilmesi @@
 ```
 
 Open a terminal in the same folder as 'Dockerfile' in the root directory where you cloned the repository.
@@ -100,8 +100,8 @@ Start the project with your favorite IDE with Docker running.
 * As seen here project uses in-memory database for its simple database connection.
 * It also shows the Status History so 'Bonus' requirement is met.
 
-```
-Bir ilana ait zamanla oluşan tüm durum değişikliklerini listeleme (BONUS)
+```diff
+@@ Bir ilana ait zamanla oluşan tüm durum değişikliklerini listeleme (BONUS) @@
 ```
 
 <img class="img-responsive" src="imgs/Screenshot_2.png" align="">
@@ -116,15 +116,15 @@ Bir ilana ait zamanla oluşan tüm durum değişikliklerini listeleme (BONUS)
   
 * Whenever we save a new campaign, backend will look for the category in the SaveRequest and if its "TSS", "OTHER" or "OSS" it will assign "AWAITING_APPROVAL" otherwise it will assign "ACTIVE" if its not null.
 * It will also be sure if the title, description and category are same it will mark it as duplicated.
-```
-Aynı kategoride, aynı başlık ve açıklamaya sahip kampanya girildiğinde "Mükerrer" olarak işaretlenmelidir, mükerrer ilanların durumu güncellenemez.
+```diff
+@@ Aynı kategoride, aynı başlık ve açıklamaya sahip kampanya girildiğinde "Mükerrer" olarak işaretlenmelidir, mükerrer ilanların durumu güncellenemez. @@
 ```
   
 * This will cover this requirement.
 
-```
-Kampanya ilk verildiğinde TSS, ÖSS ve Diğer kategorisi için "Onay Bekliyor" durumunda,bunların dışındaki kategoriler için ise "Aktif" durumda olmalıdır.
-Özetle Hayat Sigortası kategorisi dışındakiler onaydan geçerek "Aktif" hale gelebilecektir.
+```diff
+@@ Kampanya ilk verildiğinde TSS, ÖSS ve Diğer kategorisi için "Onay Bekliyor" durumunda,bunların dışındaki kategoriler için ise "Aktif" durumda olmalıdır. @@
+@@ Özetle Hayat Sigortası kategorisi dışındakiler onaydan geçerek "Aktif" hale gelebilecektir. @@
 ```
 <img class="img-responsive" src="imgs/Screenshot_4.png" align="">
 
@@ -132,9 +132,9 @@ Kampanya ilk verildiğinde TSS, ÖSS ve Diğer kategorisi için "Onay Bekliyor" 
 
 <img class="img-responsive" src="imgs/Screenshot_5.png" align="">
 
-```
-"Onay Bekliyor" durumundaki kampanya onaylandığında "Aktif" hale gelir. (İlanlar her daim onaylanacakmış ve reddedilmeyecekmiş gibi varsayılabilir)
-Kullanıcı "Aktif" durumdaki veya "Onay Bekliyor" durumdaki ilanını "Deaktif" yapabilir.
+```diff
+@@ "Onay Bekliyor" durumundaki kampanya onaylandığında "Aktif" hale gelir. (İlanlar her daim onaylanacakmış ve reddedilmeyecekmiş gibi varsayılabilir) @@
+@@ Kullanıcı "Aktif" durumdaki veya "Onay Bekliyor" durumdaki ilanını "Deaktif" yapabilir. @@
 ```
 
 ### Dashboard Controller
@@ -143,8 +143,8 @@ Kullanıcı "Aktif" durumdaki veya "Onay Bekliyor" durumdaki ilanını "Deaktif"
 
 * In this section, this API call will show the "ACTIVE", "INACTIVE" and "WAITING_APPROVAL" counts in the database.
 
-```
-Kayıtlı tüm kampanyaların toplamda hangi durumlarda olduğunun istatistiksel -Aktif: 151, -Deaktif: 71 gibi olarak listelenmesi. GET /dashboard/classifieds/statistics
+```diff
+@@ Kayıtlı tüm kampanyaların toplamda hangi durumlarda olduğunun istatistiksel -Aktif: 151, -Deaktif: 71 gibi olarak listelenmesi. GET /dashboard/classifieds/statistics @@
 ```
 
 ### Unit Tests
@@ -157,8 +157,8 @@ Kayıtlı tüm kampanyaların toplamda hangi durumlarda olduğunun istatistiksel
 
 * As seen above this code provides a calcutation for all the methods in the project and it logs every methods calls that extends the 5 ms time limit.
 
-```
-Çalışma süresi 5 milisaniyeden fazla süren isteklerin her defasında loglanması
+```diff
+@@ Çalışma süresi 5 milisaniyeden fazla süren isteklerin her defasında loglanması @@
 ```
 
 
